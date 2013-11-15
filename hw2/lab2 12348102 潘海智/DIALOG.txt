@@ -1,0 +1,1612 @@
+-----------------------------------------------------------------------
+                          Dialog at time: 0
+[Customer Movements]
+
+customer 1 enqueued in queue-1 at time 0
+customer 2 enqueued in queue-1 at time 0
+customer 3 enqueued in queue-1 at time 0
+customer 4 enqueued in queue-1 at time 0
+customer 5 enqueued in queue-1 at time 0
+customer 6 enqueued in queue-1 at time 0
+customer 1 dequeued at time 0 and he has been waiting for 0 minutes
+customer 1 got to window 1 at time 0
+customer 2 dequeued at time 0 and he has been waiting for 0 minutes
+customer 2 got to window 2 at time 0
+customer 3 dequeued at time 0 and he has been waiting for 0 minutes
+customer 3 got to window 3 at time 0
+customer 4 dequeued at time 0 and he has been waiting for 0 minutes
+customer 4 got to window 4 at time 0
+customer 5 dequeued at time 0 and he has been waiting for 0 minutes
+customer 5 got to window 5 at time 0
+customer 6 dequeued at time 0 and he has been waiting for 0 minutes
+customer 6 got to window 6 at time 0
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 0         served: 0         waiting: 0                *
+*                                                                     *
+*               Window 1       serving customer  1                    *
+*               Window 2       serving customer  2                    *
+*               Window 3       serving customer  3                    *
+*               Window 4       serving customer  4                    *
+*               Window 5       serving customer  5                    *
+*               Window 6       serving customer  6                    *
+*               Window 7       spare                                  *
+*               Window 8       spare                                  *
+*               Window 9       spare                                  *
+*               Window 10      spare                                  *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 1
+[Customer Movements]
+
+customer 7 enqueued in queue-1 at time 1
+customer 8 enqueued in queue-1 at time 1
+customer 9 enqueued in queue-1 at time 1
+customer 10 enqueued in queue-1 at time 1
+customer 11 enqueued in queue-1 at time 1
+customer 12 enqueued in queue-1 at time 1
+customer 13 enqueued in queue-1 at time 1
+customer 14 enqueued in queue-1 at time 1
+customer 7 dequeued at time 1 and he has been waiting for 0 minutes
+customer 7 got to window 7 at time 1
+customer 8 dequeued at time 1 and he has been waiting for 0 minutes
+customer 8 got to window 8 at time 1
+customer 9 dequeued at time 1 and he has been waiting for 0 minutes
+customer 9 got to window 9 at time 1
+customer 10 dequeued at time 1 and he has been waiting for 0 minutes
+customer 10 got to window 10 at time 1
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 1         served: 0         waiting: 4                *
+*                                                                     *
+*               Window 1       serving customer  1                    *
+*               Window 2       serving customer  2                    *
+*               Window 3       serving customer  3                    *
+*               Window 4       serving customer  4                    *
+*               Window 5       serving customer  5                    *
+*               Window 6       serving customer  6                    *
+*               Window 7       serving customer  7                    *
+*               Window 8       serving customer  8                    *
+*               Window 9       serving customer  9                    *
+*               Window 10      serving customer  10                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 2
+[Customer Movements]
+
+customer 15 enqueued in queue-1 at time 2
+customer 16 enqueued in queue-1 at time 2
+customer 17 enqueued in queue-1 at time 2
+customer 18 enqueued in queue-1 at time 2
+customer 19 enqueued in queue-1 at time 2
+customer 20 enqueued in queue-1 at time 2
+customer 21 enqueued in queue-1 at time 2
+customer 2 left window 2 at time 2 and his service-time is 2
+customer 2 left the bank at time 2 and it cost him 2 minutes in total
+customer 3 left window 3 at time 2 and his service-time is 2
+customer 3 left the bank at time 2 and it cost him 2 minutes in total
+customer 5 left window 5 at time 2 and his service-time is 2
+customer 5 left the bank at time 2 and it cost him 2 minutes in total
+customer 7 left window 7 at time 2 and his service-time is 1
+customer 7 left the bank at time 2 and it cost him 1 minutes in total
+customer 8 left window 8 at time 2 and his service-time is 1
+customer 8 left the bank at time 2 and it cost him 1 minutes in total
+customer 11 dequeued at time 2 and he has been waiting for 1 minutes
+customer 11 got to window 2 at time 2
+customer 12 dequeued at time 2 and he has been waiting for 1 minutes
+customer 12 got to window 3 at time 2
+customer 13 dequeued at time 2 and he has been waiting for 1 minutes
+customer 13 got to window 5 at time 2
+customer 14 dequeued at time 2 and he has been waiting for 1 minutes
+customer 14 got to window 7 at time 2
+customer 15 dequeued at time 2 and he has been waiting for 0 minutes
+customer 15 got to window 8 at time 2
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 2         served: 5         waiting: 6                *
+*                                                                     *
+*               Window 1       serving customer  1                    *
+*               Window 2       serving customer  11                   *
+*               Window 3       serving customer  12                   *
+*               Window 4       serving customer  4                    *
+*               Window 5       serving customer  13                   *
+*               Window 6       serving customer  6                    *
+*               Window 7       serving customer  14                   *
+*               Window 8       serving customer  15                   *
+*               Window 9       serving customer  9                    *
+*               Window 10      serving customer  10                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 3
+[Customer Movements]
+
+customer 22 enqueued in queue-1 at time 3
+customer 23 enqueued in queue-1 at time 3
+customer 24 enqueued in queue-1 at time 3
+customer 25 enqueued in queue-1 at time 3
+customer 4 left window 4 at time 3 and his service-time is 3
+customer 4 left the bank at time 3 and it cost him 3 minutes in total
+customer 13 left window 5 at time 3 and his service-time is 1
+customer 13 left the bank at time 3 and it cost him 2 minutes in total
+customer 14 left window 7 at time 3 and his service-time is 1
+customer 14 left the bank at time 3 and it cost him 2 minutes in total
+customer 9 left window 9 at time 3 and his service-time is 2
+customer 9 left the bank at time 3 and it cost him 2 minutes in total
+customer 16 dequeued at time 3 and he has been waiting for 1 minutes
+customer 16 got to window 4 at time 3
+customer 17 dequeued at time 3 and he has been waiting for 1 minutes
+customer 17 got to window 5 at time 3
+customer 18 dequeued at time 3 and he has been waiting for 1 minutes
+customer 18 got to window 7 at time 3
+customer 19 dequeued at time 3 and he has been waiting for 1 minutes
+customer 19 got to window 9 at time 3
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 3         served: 9         waiting: 6                *
+*                                                                     *
+*               Window 1       serving customer  1                    *
+*               Window 2       serving customer  11                   *
+*               Window 3       serving customer  12                   *
+*               Window 4       serving customer  16                   *
+*               Window 5       serving customer  17                   *
+*               Window 6       serving customer  6                    *
+*               Window 7       serving customer  18                   *
+*               Window 8       serving customer  15                   *
+*               Window 9       serving customer  19                   *
+*               Window 10      serving customer  10                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 4
+[Customer Movements]
+
+customer 26 enqueued in queue-1 at time 4
+customer 27 enqueued in queue-1 at time 4
+customer 28 enqueued in queue-1 at time 4
+customer 29 enqueued in queue-1 at time 4
+customer 30 enqueued in queue-1 at time 4
+customer 31 enqueued in queue-1 at time 4
+customer 32 enqueued in queue-1 at time 4
+customer 33 enqueued in queue-1 at time 4
+customer 34 enqueued in queue-1 at time 4
+customer 35 enqueued in queue-1 at time 4
+customer 36 enqueued in queue-1 at time 4
+customer 1 left window 1 at time 4 and his service-time is 4
+customer 1 left the bank at time 4 and it cost him 4 minutes in total
+customer 17 left window 5 at time 4 and his service-time is 1
+customer 17 left the bank at time 4 and it cost him 2 minutes in total
+customer 6 left window 6 at time 4 and his service-time is 4
+customer 6 left the bank at time 4 and it cost him 4 minutes in total
+customer 20 dequeued at time 4 and he has been waiting for 2 minutes
+customer 20 got to window 1 at time 4
+customer 21 dequeued at time 4 and he has been waiting for 2 minutes
+customer 21 got to window 5 at time 4
+customer 22 dequeued at time 4 and he has been waiting for 1 minutes
+customer 22 got to window 6 at time 4
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 4         served: 12        waiting: 14               *
+*                                                                     *
+*               Window 1       serving customer  20                   *
+*               Window 2       serving customer  11                   *
+*               Window 3       serving customer  12                   *
+*               Window 4       serving customer  16                   *
+*               Window 5       serving customer  21                   *
+*               Window 6       serving customer  22                   *
+*               Window 7       serving customer  18                   *
+*               Window 8       serving customer  15                   *
+*               Window 9       serving customer  19                   *
+*               Window 10      serving customer  10                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 5
+[Customer Movements]
+
+customer 37 enqueued in queue-1 at time 5
+customer 38 enqueued in queue-1 at time 5
+customer 39 enqueued in queue-1 at time 5
+customer 40 enqueued in queue-1 at time 5
+customer 41 enqueued in queue-1 at time 5
+customer 42 enqueued in queue-1 at time 5
+customer 43 enqueued in queue-1 at time 5
+customer 44 enqueued in queue-1 at time 5
+customer 45 enqueued in queue-1 at time 5
+customer 12 left window 3 at time 5 and his service-time is 3
+customer 12 left the bank at time 5 and it cost him 4 minutes in total
+customer 18 left window 7 at time 5 and his service-time is 2
+customer 18 left the bank at time 5 and it cost him 3 minutes in total
+customer 19 left window 9 at time 5 and his service-time is 2
+customer 19 left the bank at time 5 and it cost him 3 minutes in total
+customer 10 left window 10 at time 5 and his service-time is 4
+customer 10 left the bank at time 5 and it cost him 4 minutes in total
+customer 23 dequeued at time 5 and he has been waiting for 2 minutes
+customer 23 got to window 3 at time 5
+customer 24 dequeued at time 5 and he has been waiting for 2 minutes
+customer 24 got to window 7 at time 5
+customer 25 dequeued at time 5 and he has been waiting for 2 minutes
+customer 25 got to window 9 at time 5
+customer 26 dequeued at time 5 and he has been waiting for 1 minutes
+customer 26 got to window 10 at time 5
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 5         served: 16        waiting: 19               *
+*                                                                     *
+*               Window 1       serving customer  20                   *
+*               Window 2       serving customer  11                   *
+*               Window 3       serving customer  23                   *
+*               Window 4       serving customer  16                   *
+*               Window 5       serving customer  21                   *
+*               Window 6       serving customer  22                   *
+*               Window 7       serving customer  24                   *
+*               Window 8       serving customer  15                   *
+*               Window 9       serving customer  25                   *
+*               Window 10      serving customer  26                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 6
+[Customer Movements]
+
+customer 46 enqueued in queue-1 at time 6
+customer 47 enqueued in queue-1 at time 6
+customer 48 enqueued in queue-1 at time 6
+customer 49 enqueued in queue-1 at time 6
+customer 50 enqueued in queue-1 at time 6
+customer 51 enqueued in queue-1 at time 6
+customer 11 left window 2 at time 6 and his service-time is 4
+customer 11 left the bank at time 6 and it cost him 5 minutes in total
+customer 16 left window 4 at time 6 and his service-time is 3
+customer 16 left the bank at time 6 and it cost him 4 minutes in total
+customer 22 left window 6 at time 6 and his service-time is 2
+customer 22 left the bank at time 6 and it cost him 3 minutes in total
+customer 15 left window 8 at time 6 and his service-time is 4
+customer 15 left the bank at time 6 and it cost him 4 minutes in total
+customer 27 dequeued at time 6 and he has been waiting for 2 minutes
+customer 27 got to window 2 at time 6
+customer 28 dequeued at time 6 and he has been waiting for 2 minutes
+customer 28 got to window 4 at time 6
+customer 29 dequeued at time 6 and he has been waiting for 2 minutes
+customer 29 got to window 6 at time 6
+customer 30 dequeued at time 6 and he has been waiting for 2 minutes
+customer 30 got to window 8 at time 6
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 6         served: 20        waiting: 21               *
+*                                                                     *
+*               Window 1       serving customer  20                   *
+*               Window 2       serving customer  27                   *
+*               Window 3       serving customer  23                   *
+*               Window 4       serving customer  28                   *
+*               Window 5       serving customer  21                   *
+*               Window 6       serving customer  29                   *
+*               Window 7       serving customer  24                   *
+*               Window 8       serving customer  30                   *
+*               Window 9       serving customer  25                   *
+*               Window 10      serving customer  26                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 7
+[Customer Movements]
+
+customer 52 enqueued in queue-1 at time 7
+customer 53 enqueued in queue-1 at time 7
+customer 54 enqueued in queue-1 at time 7
+customer 20 left window 1 at time 7 and his service-time is 3
+customer 20 left the bank at time 7 and it cost him 5 minutes in total
+customer 24 left window 7 at time 7 and his service-time is 2
+customer 24 left the bank at time 7 and it cost him 4 minutes in total
+customer 31 dequeued at time 7 and he has been waiting for 3 minutes
+customer 31 got to window 1 at time 7
+customer 32 dequeued at time 7 and he has been waiting for 3 minutes
+customer 32 got to window 7 at time 7
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 7         served: 22        waiting: 22               *
+*                                                                     *
+*               Window 1       serving customer  31                   *
+*               Window 2       serving customer  27                   *
+*               Window 3       serving customer  23                   *
+*               Window 4       serving customer  28                   *
+*               Window 5       serving customer  21                   *
+*               Window 6       serving customer  29                   *
+*               Window 7       serving customer  32                   *
+*               Window 8       serving customer  30                   *
+*               Window 9       serving customer  25                   *
+*               Window 10      serving customer  26                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 8
+[Customer Movements]
+
+customer 55 enqueued in queue-1 at time 8
+customer 56 enqueued in queue-1 at time 8
+customer 57 enqueued in queue-1 at time 8
+customer 58 enqueued in queue-1 at time 8
+customer 59 enqueued in queue-1 at time 8
+customer 60 enqueued in queue-1 at time 8
+customer 61 enqueued in queue-1 at time 8
+customer 27 left window 2 at time 8 and his service-time is 2
+customer 27 left the bank at time 8 and it cost him 4 minutes in total
+customer 21 left window 5 at time 8 and his service-time is 4
+customer 21 left the bank at time 8 and it cost him 6 minutes in total
+customer 30 left window 8 at time 8 and his service-time is 2
+customer 30 left the bank at time 8 and it cost him 4 minutes in total
+customer 33 dequeued at time 8 and he has been waiting for 4 minutes
+customer 33 got to window 2 at time 8
+customer 34 dequeued at time 8 and he has been waiting for 4 minutes
+customer 34 got to window 5 at time 8
+customer 35 dequeued at time 8 and he has been waiting for 4 minutes
+customer 35 got to window 8 at time 8
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 8         served: 25        waiting: 26               *
+*                                                                     *
+*               Window 1       serving customer  31                   *
+*               Window 2       serving customer  33                   *
+*               Window 3       serving customer  23                   *
+*               Window 4       serving customer  28                   *
+*               Window 5       serving customer  34                   *
+*               Window 6       serving customer  29                   *
+*               Window 7       serving customer  32                   *
+*               Window 8       serving customer  35                   *
+*               Window 9       serving customer  25                   *
+*               Window 10      serving customer  26                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 9
+[Customer Movements]
+
+customer 62 enqueued in queue-1 at time 9
+customer 63 enqueued in queue-1 at time 9
+customer 64 enqueued in queue-1 at time 9
+customer 65 enqueued in queue-1 at time 9
+customer 66 enqueued in queue-1 at time 9
+customer 67 enqueued in queue-1 at time 9
+customer 31 left window 1 at time 9 and his service-time is 2
+customer 31 left the bank at time 9 and it cost him 5 minutes in total
+customer 23 left window 3 at time 9 and his service-time is 4
+customer 23 left the bank at time 9 and it cost him 6 minutes in total
+customer 28 left window 4 at time 9 and his service-time is 3
+customer 28 left the bank at time 9 and it cost him 5 minutes in total
+customer 35 left window 8 at time 9 and his service-time is 1
+customer 35 left the bank at time 9 and it cost him 5 minutes in total
+customer 25 left window 9 at time 9 and his service-time is 4
+customer 25 left the bank at time 9 and it cost him 6 minutes in total
+customer 26 left window 10 at time 9 and his service-time is 4
+customer 26 left the bank at time 9 and it cost him 5 minutes in total
+customer 36 dequeued at time 9 and he has been waiting for 5 minutes
+customer 36 got to window 1 at time 9
+customer 37 dequeued at time 9 and he has been waiting for 4 minutes
+customer 37 got to window 3 at time 9
+customer 38 dequeued at time 9 and he has been waiting for 4 minutes
+customer 38 got to window 4 at time 9
+customer 39 dequeued at time 9 and he has been waiting for 4 minutes
+customer 39 got to window 8 at time 9
+customer 40 dequeued at time 9 and he has been waiting for 4 minutes
+customer 40 got to window 9 at time 9
+customer 41 dequeued at time 9 and he has been waiting for 4 minutes
+customer 41 got to window 10 at time 9
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 9         served: 31        waiting: 26               *
+*                                                                     *
+*               Window 1       serving customer  36                   *
+*               Window 2       serving customer  33                   *
+*               Window 3       serving customer  37                   *
+*               Window 4       serving customer  38                   *
+*               Window 5       serving customer  34                   *
+*               Window 6       serving customer  29                   *
+*               Window 7       serving customer  32                   *
+*               Window 8       serving customer  39                   *
+*               Window 9       serving customer  40                   *
+*               Window 10      serving customer  41                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 10
+[Customer Movements]
+
+customer 68 enqueued in queue-1 at time 10
+customer 69 enqueued in queue-1 at time 10
+customer 70 enqueued in queue-1 at time 10
+customer 71 enqueued in queue-1 at time 10
+customer 72 enqueued in queue-1 at time 10
+customer 73 enqueued in queue-1 at time 10
+customer 74 enqueued in queue-1 at time 10
+customer 75 enqueued in queue-1 at time 10
+customer 76 enqueued in queue-1 at time 10
+customer 38 left window 4 at time 10 and his service-time is 1
+customer 38 left the bank at time 10 and it cost him 5 minutes in total
+customer 29 left window 6 at time 10 and his service-time is 4
+customer 29 left the bank at time 10 and it cost him 6 minutes in total
+customer 32 left window 7 at time 10 and his service-time is 3
+customer 32 left the bank at time 10 and it cost him 6 minutes in total
+customer 42 dequeued at time 10 and he has been waiting for 5 minutes
+customer 42 got to window 4 at time 10
+customer 43 dequeued at time 10 and he has been waiting for 5 minutes
+customer 43 got to window 6 at time 10
+customer 44 dequeued at time 10 and he has been waiting for 5 minutes
+customer 44 got to window 7 at time 10
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 10        served: 34        waiting: 32               *
+*                                                                     *
+*               Window 1       serving customer  36                   *
+*               Window 2       serving customer  33                   *
+*               Window 3       serving customer  37                   *
+*               Window 4       serving customer  42                   *
+*               Window 5       serving customer  34                   *
+*               Window 6       serving customer  43                   *
+*               Window 7       serving customer  44                   *
+*               Window 8       serving customer  39                   *
+*               Window 9       serving customer  40                   *
+*               Window 10      serving customer  41                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 11
+[Customer Movements]
+
+customer 77 enqueued in queue-1 at time 11
+customer 78 enqueued in queue-1 at time 11
+customer 79 enqueued in queue-1 at time 11
+customer 80 enqueued in queue-1 at time 11
+customer 81 enqueued in queue-1 at time 11
+customer 82 enqueued in queue-1 at time 11
+customer 83 enqueued in queue-1 at time 11
+customer 84 enqueued in queue-1 at time 11
+customer 33 left window 2 at time 11 and his service-time is 3
+customer 33 left the bank at time 11 and it cost him 7 minutes in total
+customer 37 left window 3 at time 11 and his service-time is 2
+customer 37 left the bank at time 11 and it cost him 6 minutes in total
+customer 34 left window 5 at time 11 and his service-time is 3
+customer 34 left the bank at time 11 and it cost him 7 minutes in total
+customer 43 left window 6 at time 11 and his service-time is 1
+customer 43 left the bank at time 11 and it cost him 6 minutes in total
+customer 45 dequeued at time 11 and he has been waiting for 6 minutes
+customer 45 got to window 2 at time 11
+customer 46 dequeued at time 11 and he has been waiting for 5 minutes
+customer 46 got to window 3 at time 11
+customer 47 dequeued at time 11 and he has been waiting for 5 minutes
+customer 47 got to window 5 at time 11
+customer 48 dequeued at time 11 and he has been waiting for 5 minutes
+customer 48 got to window 6 at time 11
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 11        served: 38        waiting: 36               *
+*                                                                     *
+*               Window 1       serving customer  36                   *
+*               Window 2       serving customer  45                   *
+*               Window 3       serving customer  46                   *
+*               Window 4       serving customer  42                   *
+*               Window 5       serving customer  47                   *
+*               Window 6       serving customer  48                   *
+*               Window 7       serving customer  44                   *
+*               Window 8       serving customer  39                   *
+*               Window 9       serving customer  40                   *
+*               Window 10      serving customer  41                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 12
+[Customer Movements]
+
+customer 85 enqueued in queue-1 at time 12
+customer 86 enqueued in queue-1 at time 12
+customer 87 enqueued in queue-1 at time 12
+customer 40 left window 9 at time 12 and his service-time is 3
+customer 40 left the bank at time 12 and it cost him 7 minutes in total
+customer 49 dequeued at time 12 and he has been waiting for 6 minutes
+customer 49 got to window 9 at time 12
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 12        served: 39        waiting: 38               *
+*                                                                     *
+*               Window 1       serving customer  36                   *
+*               Window 2       serving customer  45                   *
+*               Window 3       serving customer  46                   *
+*               Window 4       serving customer  42                   *
+*               Window 5       serving customer  47                   *
+*               Window 6       serving customer  48                   *
+*               Window 7       serving customer  44                   *
+*               Window 8       serving customer  39                   *
+*               Window 9       serving customer  49                   *
+*               Window 10      serving customer  41                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 13
+[Customer Movements]
+
+customer 88 enqueued in queue-1 at time 13
+customer 89 enqueued in queue-1 at time 13
+customer 90 enqueued in queue-1 at time 13
+customer 91 enqueued in queue-1 at time 13
+customer 92 enqueued in queue-1 at time 13
+customer 93 enqueued in queue-1 at time 13
+customer 36 left window 1 at time 13 and his service-time is 4
+customer 36 left the bank at time 13 and it cost him 9 minutes in total
+customer 47 left window 5 at time 13 and his service-time is 2
+customer 47 left the bank at time 13 and it cost him 7 minutes in total
+customer 39 left window 8 at time 13 and his service-time is 4
+customer 39 left the bank at time 13 and it cost him 8 minutes in total
+customer 41 left window 10 at time 13 and his service-time is 4
+customer 41 left the bank at time 13 and it cost him 8 minutes in total
+customer 50 dequeued at time 13 and he has been waiting for 7 minutes
+customer 50 got to window 1 at time 13
+customer 51 dequeued at time 13 and he has been waiting for 7 minutes
+customer 51 got to window 5 at time 13
+customer 52 dequeued at time 13 and he has been waiting for 6 minutes
+customer 52 got to window 8 at time 13
+customer 53 dequeued at time 13 and he has been waiting for 6 minutes
+customer 53 got to window 10 at time 13
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 13        served: 43        waiting: 40               *
+*                                                                     *
+*               Window 1       serving customer  50                   *
+*               Window 2       serving customer  45                   *
+*               Window 3       serving customer  46                   *
+*               Window 4       serving customer  42                   *
+*               Window 5       serving customer  51                   *
+*               Window 6       serving customer  48                   *
+*               Window 7       serving customer  44                   *
+*               Window 8       serving customer  52                   *
+*               Window 9       serving customer  49                   *
+*               Window 10      serving customer  53                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 14
+[Customer Movements]
+
+customer 94 enqueued in queue-1 at time 14
+customer 95 enqueued in queue-1 at time 14
+customer 96 enqueued in queue-1 at time 14
+customer 97 enqueued in queue-1 at time 14
+customer 98 enqueued in queue-1 at time 14
+customer 42 left window 4 at time 14 and his service-time is 4
+customer 42 left the bank at time 14 and it cost him 9 minutes in total
+customer 44 left window 7 at time 14 and his service-time is 4
+customer 44 left the bank at time 14 and it cost him 9 minutes in total
+customer 52 left window 8 at time 14 and his service-time is 1
+customer 52 left the bank at time 14 and it cost him 7 minutes in total
+customer 49 left window 9 at time 14 and his service-time is 2
+customer 49 left the bank at time 14 and it cost him 8 minutes in total
+customer 53 left window 10 at time 14 and his service-time is 1
+customer 53 left the bank at time 14 and it cost him 7 minutes in total
+customer 54 dequeued at time 14 and he has been waiting for 7 minutes
+customer 54 got to window 4 at time 14
+customer 55 dequeued at time 14 and he has been waiting for 6 minutes
+customer 55 got to window 7 at time 14
+customer 56 dequeued at time 14 and he has been waiting for 6 minutes
+customer 56 got to window 8 at time 14
+customer 57 dequeued at time 14 and he has been waiting for 6 minutes
+customer 57 got to window 9 at time 14
+customer 58 dequeued at time 14 and he has been waiting for 6 minutes
+customer 58 got to window 10 at time 14
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 14        served: 48        waiting: 40               *
+*                                                                     *
+*               Window 1       serving customer  50                   *
+*               Window 2       serving customer  45                   *
+*               Window 3       serving customer  46                   *
+*               Window 4       serving customer  54                   *
+*               Window 5       serving customer  51                   *
+*               Window 6       serving customer  48                   *
+*               Window 7       serving customer  55                   *
+*               Window 8       serving customer  56                   *
+*               Window 9       serving customer  57                   *
+*               Window 10      serving customer  58                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 15
+[Customer Movements]
+
+customer 99 enqueued in queue-1 at time 15
+customer 100 enqueued in queue-1 at time 15
+customer 101 enqueued in queue-1 at time 15
+customer 102 enqueued in queue-1 at time 15
+customer 103 enqueued in queue-1 at time 15
+customer 104 enqueued in queue-1 at time 15
+customer 105 enqueued in queue-1 at time 15
+customer 106 enqueued in queue-1 at time 15
+customer 107 enqueued in queue-1 at time 15
+customer 108 enqueued in queue-1 at time 15
+customer 109 enqueued in queue-1 at time 15
+customer 45 left window 2 at time 15 and his service-time is 4
+customer 45 left the bank at time 15 and it cost him 10 minutes in total
+customer 46 left window 3 at time 15 and his service-time is 4
+customer 46 left the bank at time 15 and it cost him 9 minutes in total
+customer 54 left window 4 at time 15 and his service-time is 1
+customer 54 left the bank at time 15 and it cost him 8 minutes in total
+customer 51 left window 5 at time 15 and his service-time is 2
+customer 51 left the bank at time 15 and it cost him 9 minutes in total
+customer 48 left window 6 at time 15 and his service-time is 4
+customer 48 left the bank at time 15 and it cost him 9 minutes in total
+customer 59 dequeued at time 15 and he has been waiting for 7 minutes
+customer 59 got to window 2 at time 15
+customer 60 dequeued at time 15 and he has been waiting for 7 minutes
+customer 60 got to window 3 at time 15
+customer 61 dequeued at time 15 and he has been waiting for 7 minutes
+customer 61 got to window 4 at time 15
+customer 62 dequeued at time 15 and he has been waiting for 6 minutes
+customer 62 got to window 5 at time 15
+customer 63 dequeued at time 15 and he has been waiting for 6 minutes
+customer 63 got to window 6 at time 15
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 15        served: 53        waiting: 46               *
+*                                                                     *
+*               Window 1       serving customer  50                   *
+*               Window 2       serving customer  59                   *
+*               Window 3       serving customer  60                   *
+*               Window 4       serving customer  61                   *
+*               Window 5       serving customer  62                   *
+*               Window 6       serving customer  63                   *
+*               Window 7       serving customer  55                   *
+*               Window 8       serving customer  56                   *
+*               Window 9       serving customer  57                   *
+*               Window 10      serving customer  58                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 16
+[Customer Movements]
+
+customer 110 enqueued in queue-1 at time 16
+customer 111 enqueued in queue-1 at time 16
+customer 112 enqueued in queue-1 at time 16
+customer 113 enqueued in queue-1 at time 16
+customer 114 enqueued in queue-1 at time 16
+customer 115 enqueued in queue-1 at time 16
+customer 116 enqueued in queue-1 at time 16
+customer 61 left window 4 at time 16 and his service-time is 1
+customer 61 left the bank at time 16 and it cost him 8 minutes in total
+customer 63 left window 6 at time 16 and his service-time is 1
+customer 63 left the bank at time 16 and it cost him 7 minutes in total
+customer 64 dequeued at time 16 and he has been waiting for 7 minutes
+customer 64 got to window 4 at time 16
+customer 65 dequeued at time 16 and he has been waiting for 7 minutes
+customer 65 got to window 6 at time 16
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 16        served: 55        waiting: 51               *
+*                                                                     *
+*               Window 1       serving customer  50                   *
+*               Window 2       serving customer  59                   *
+*               Window 3       serving customer  60                   *
+*               Window 4       serving customer  64                   *
+*               Window 5       serving customer  62                   *
+*               Window 6       serving customer  65                   *
+*               Window 7       serving customer  55                   *
+*               Window 8       serving customer  56                   *
+*               Window 9       serving customer  57                   *
+*               Window 10      serving customer  58                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 17
+[Customer Movements]
+
+customer 117 enqueued in queue-1 at time 17
+customer 118 enqueued in queue-1 at time 17
+customer 119 enqueued in queue-1 at time 17
+customer 120 enqueued in queue-1 at time 17
+customer 121 enqueued in queue-1 at time 17
+customer 50 left window 1 at time 17 and his service-time is 4
+customer 50 left the bank at time 17 and it cost him 11 minutes in total
+customer 59 left window 2 at time 17 and his service-time is 2
+customer 59 left the bank at time 17 and it cost him 9 minutes in total
+customer 55 left window 7 at time 17 and his service-time is 3
+customer 55 left the bank at time 17 and it cost him 9 minutes in total
+customer 66 dequeued at time 17 and he has been waiting for 8 minutes
+customer 66 got to window 1 at time 17
+customer 67 dequeued at time 17 and he has been waiting for 8 minutes
+customer 67 got to window 2 at time 17
+customer 68 dequeued at time 17 and he has been waiting for 7 minutes
+customer 68 got to window 7 at time 17
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 17        served: 58        waiting: 53               *
+*                                                                     *
+*               Window 1       serving customer  66                   *
+*               Window 2       serving customer  67                   *
+*               Window 3       serving customer  60                   *
+*               Window 4       serving customer  64                   *
+*               Window 5       serving customer  62                   *
+*               Window 6       serving customer  65                   *
+*               Window 7       serving customer  68                   *
+*               Window 8       serving customer  56                   *
+*               Window 9       serving customer  57                   *
+*               Window 10      serving customer  58                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 18
+[Customer Movements]
+
+customer 122 enqueued in queue-1 at time 18
+customer 123 enqueued in queue-1 at time 18
+customer 124 enqueued in queue-1 at time 18
+customer 125 enqueued in queue-1 at time 18
+customer 126 enqueued in queue-1 at time 18
+customer 127 enqueued in queue-1 at time 18
+customer 128 enqueued in queue-1 at time 18
+customer 129 enqueued in queue-1 at time 18
+customer 130 enqueued in queue-1 at time 18
+customer 131 enqueued in queue-1 at time 18
+customer 132 enqueued in queue-1 at time 18
+customer 133 enqueued in queue-1 at time 18
+customer 66 left window 1 at time 18 and his service-time is 1
+customer 66 left the bank at time 18 and it cost him 9 minutes in total
+customer 60 left window 3 at time 18 and his service-time is 3
+customer 60 left the bank at time 18 and it cost him 10 minutes in total
+customer 65 left window 6 at time 18 and his service-time is 2
+customer 65 left the bank at time 18 and it cost him 9 minutes in total
+customer 56 left window 8 at time 18 and his service-time is 4
+customer 56 left the bank at time 18 and it cost him 10 minutes in total
+customer 57 left window 9 at time 18 and his service-time is 4
+customer 57 left the bank at time 18 and it cost him 10 minutes in total
+customer 58 left window 10 at time 18 and his service-time is 4
+customer 58 left the bank at time 18 and it cost him 10 minutes in total
+customer 69 dequeued at time 18 and he has been waiting for 8 minutes
+customer 69 got to window 1 at time 18
+customer 70 dequeued at time 18 and he has been waiting for 8 minutes
+customer 70 got to window 3 at time 18
+customer 71 dequeued at time 18 and he has been waiting for 8 minutes
+customer 71 got to window 6 at time 18
+customer 72 dequeued at time 18 and he has been waiting for 8 minutes
+customer 72 got to window 8 at time 18
+customer 73 dequeued at time 18 and he has been waiting for 8 minutes
+customer 73 got to window 9 at time 18
+customer 74 dequeued at time 18 and he has been waiting for 8 minutes
+customer 74 got to window 10 at time 18
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 18        served: 64        waiting: 59               *
+*                                                                     *
+*               Window 1       serving customer  69                   *
+*               Window 2       serving customer  67                   *
+*               Window 3       serving customer  70                   *
+*               Window 4       serving customer  64                   *
+*               Window 5       serving customer  62                   *
+*               Window 6       serving customer  71                   *
+*               Window 7       serving customer  68                   *
+*               Window 8       serving customer  72                   *
+*               Window 9       serving customer  73                   *
+*               Window 10      serving customer  74                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 19
+[Customer Movements]
+
+customer 134 enqueued in queue-1 at time 19
+customer 135 enqueued in queue-1 at time 19
+customer 136 enqueued in queue-1 at time 19
+customer 137 enqueued in queue-1 at time 19
+customer 138 enqueued in queue-1 at time 19
+customer 139 enqueued in queue-1 at time 19
+customer 67 left window 2 at time 19 and his service-time is 2
+customer 67 left the bank at time 19 and it cost him 10 minutes in total
+customer 64 left window 4 at time 19 and his service-time is 3
+customer 64 left the bank at time 19 and it cost him 10 minutes in total
+customer 62 left window 5 at time 19 and his service-time is 4
+customer 62 left the bank at time 19 and it cost him 10 minutes in total
+customer 72 left window 8 at time 19 and his service-time is 1
+customer 72 left the bank at time 19 and it cost him 9 minutes in total
+customer 73 left window 9 at time 19 and his service-time is 1
+customer 73 left the bank at time 19 and it cost him 9 minutes in total
+customer 75 dequeued at time 19 and he has been waiting for 9 minutes
+customer 75 got to window 2 at time 19
+customer 76 dequeued at time 19 and he has been waiting for 9 minutes
+customer 76 got to window 4 at time 19
+customer 77 dequeued at time 19 and he has been waiting for 8 minutes
+customer 77 got to window 5 at time 19
+customer 78 dequeued at time 19 and he has been waiting for 8 minutes
+customer 78 got to window 8 at time 19
+customer 79 dequeued at time 19 and he has been waiting for 8 minutes
+customer 79 got to window 9 at time 19
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 19        served: 69        waiting: 60               *
+*                                                                     *
+*               Window 1       serving customer  69                   *
+*               Window 2       serving customer  75                   *
+*               Window 3       serving customer  70                   *
+*               Window 4       serving customer  76                   *
+*               Window 5       serving customer  77                   *
+*               Window 6       serving customer  71                   *
+*               Window 7       serving customer  68                   *
+*               Window 8       serving customer  78                   *
+*               Window 9       serving customer  79                   *
+*               Window 10      serving customer  74                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 20
+[Customer Movements]
+
+customer 140 enqueued in queue-1 at time 20
+customer 141 enqueued in queue-1 at time 20
+customer 142 enqueued in queue-1 at time 20
+customer 143 enqueued in queue-1 at time 20
+customer 69 left window 1 at time 20 and his service-time is 2
+customer 69 left the bank at time 20 and it cost him 10 minutes in total
+customer 75 left window 2 at time 20 and his service-time is 1
+customer 75 left the bank at time 20 and it cost him 10 minutes in total
+customer 70 left window 3 at time 20 and his service-time is 2
+customer 70 left the bank at time 20 and it cost him 10 minutes in total
+customer 71 left window 6 at time 20 and his service-time is 2
+customer 71 left the bank at time 20 and it cost him 10 minutes in total
+customer 80 dequeued at time 20 and he has been waiting for 9 minutes
+customer 80 got to window 1 at time 20
+customer 81 dequeued at time 20 and he has been waiting for 9 minutes
+customer 81 got to window 2 at time 20
+customer 82 dequeued at time 20 and he has been waiting for 9 minutes
+customer 82 got to window 3 at time 20
+customer 83 dequeued at time 20 and he has been waiting for 9 minutes
+customer 83 got to window 6 at time 20
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 20        served: 73        waiting: 60               *
+*                                                                     *
+*               Window 1       serving customer  80                   *
+*               Window 2       serving customer  81                   *
+*               Window 3       serving customer  82                   *
+*               Window 4       serving customer  76                   *
+*               Window 5       serving customer  77                   *
+*               Window 6       serving customer  83                   *
+*               Window 7       serving customer  68                   *
+*               Window 8       serving customer  78                   *
+*               Window 9       serving customer  79                   *
+*               Window 10      serving customer  74                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 21
+[Customer Movements]
+
+customer 144 enqueued in queue-1 at time 21
+customer 145 enqueued in queue-1 at time 21
+customer 146 enqueued in queue-1 at time 21
+customer 147 enqueued in queue-1 at time 21
+customer 148 enqueued in queue-1 at time 21
+customer 149 enqueued in queue-1 at time 21
+customer 150 enqueued in queue-1 at time 21
+customer 81 left window 2 at time 21 and his service-time is 1
+customer 81 left the bank at time 21 and it cost him 10 minutes in total
+customer 82 left window 3 at time 21 and his service-time is 1
+customer 82 left the bank at time 21 and it cost him 10 minutes in total
+customer 77 left window 5 at time 21 and his service-time is 2
+customer 77 left the bank at time 21 and it cost him 10 minutes in total
+customer 68 left window 7 at time 21 and his service-time is 4
+customer 68 left the bank at time 21 and it cost him 11 minutes in total
+customer 78 left window 8 at time 21 and his service-time is 2
+customer 78 left the bank at time 21 and it cost him 10 minutes in total
+customer 74 left window 10 at time 21 and his service-time is 3
+customer 74 left the bank at time 21 and it cost him 11 minutes in total
+customer 84 dequeued at time 21 and he has been waiting for 10 minutes
+customer 84 got to window 2 at time 21
+customer 85 dequeued at time 21 and he has been waiting for 9 minutes
+customer 85 got to window 3 at time 21
+customer 86 dequeued at time 21 and he has been waiting for 9 minutes
+customer 86 got to window 5 at time 21
+customer 87 dequeued at time 21 and he has been waiting for 9 minutes
+customer 87 got to window 7 at time 21
+customer 88 dequeued at time 21 and he has been waiting for 8 minutes
+customer 88 got to window 8 at time 21
+customer 89 dequeued at time 21 and he has been waiting for 8 minutes
+customer 89 got to window 10 at time 21
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 21        served: 79        waiting: 61               *
+*                                                                     *
+*               Window 1       serving customer  80                   *
+*               Window 2       serving customer  84                   *
+*               Window 3       serving customer  85                   *
+*               Window 4       serving customer  76                   *
+*               Window 5       serving customer  86                   *
+*               Window 6       serving customer  83                   *
+*               Window 7       serving customer  87                   *
+*               Window 8       serving customer  88                   *
+*               Window 9       serving customer  79                   *
+*               Window 10      serving customer  89                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 22
+[Customer Movements]
+
+customer 151 enqueued in queue-1 at time 22
+customer 152 enqueued in queue-1 at time 22
+customer 153 enqueued in queue-1 at time 22
+customer 154 enqueued in queue-1 at time 22
+customer 155 enqueued in queue-1 at time 22
+customer 156 enqueued in queue-1 at time 22
+customer 157 enqueued in queue-1 at time 22
+customer 87 left window 7 at time 22 and his service-time is 1
+customer 87 left the bank at time 22 and it cost him 10 minutes in total
+customer 88 left window 8 at time 22 and his service-time is 1
+customer 88 left the bank at time 22 and it cost him 9 minutes in total
+customer 89 left window 10 at time 22 and his service-time is 1
+customer 89 left the bank at time 22 and it cost him 9 minutes in total
+customer 90 dequeued at time 22 and he has been waiting for 9 minutes
+customer 90 got to window 7 at time 22
+customer 91 dequeued at time 22 and he has been waiting for 9 minutes
+customer 91 got to window 8 at time 22
+customer 92 dequeued at time 22 and he has been waiting for 9 minutes
+customer 92 got to window 10 at time 22
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 22        served: 82        waiting: 65               *
+*                                                                     *
+*               Window 1       serving customer  80                   *
+*               Window 2       serving customer  84                   *
+*               Window 3       serving customer  85                   *
+*               Window 4       serving customer  76                   *
+*               Window 5       serving customer  86                   *
+*               Window 6       serving customer  83                   *
+*               Window 7       serving customer  90                   *
+*               Window 8       serving customer  91                   *
+*               Window 9       serving customer  79                   *
+*               Window 10      serving customer  92                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 23
+[Customer Movements]
+
+customer 158 enqueued in queue-1 at time 23
+customer 159 enqueued in queue-1 at time 23
+customer 160 enqueued in queue-1 at time 23
+customer 161 enqueued in queue-1 at time 23
+customer 162 enqueued in queue-1 at time 23
+customer 80 left window 1 at time 23 and his service-time is 3
+customer 80 left the bank at time 23 and it cost him 12 minutes in total
+customer 84 left window 2 at time 23 and his service-time is 2
+customer 84 left the bank at time 23 and it cost him 12 minutes in total
+customer 85 left window 3 at time 23 and his service-time is 2
+customer 85 left the bank at time 23 and it cost him 11 minutes in total
+customer 76 left window 4 at time 23 and his service-time is 4
+customer 76 left the bank at time 23 and it cost him 13 minutes in total
+customer 86 left window 5 at time 23 and his service-time is 2
+customer 86 left the bank at time 23 and it cost him 11 minutes in total
+customer 79 left window 9 at time 23 and his service-time is 4
+customer 79 left the bank at time 23 and it cost him 12 minutes in total
+customer 92 left window 10 at time 23 and his service-time is 1
+customer 92 left the bank at time 23 and it cost him 10 minutes in total
+customer 93 dequeued at time 23 and he has been waiting for 10 minutes
+customer 93 got to window 1 at time 23
+customer 94 dequeued at time 23 and he has been waiting for 9 minutes
+customer 94 got to window 2 at time 23
+customer 95 dequeued at time 23 and he has been waiting for 9 minutes
+customer 95 got to window 3 at time 23
+customer 96 dequeued at time 23 and he has been waiting for 9 minutes
+customer 96 got to window 4 at time 23
+customer 97 dequeued at time 23 and he has been waiting for 9 minutes
+customer 97 got to window 5 at time 23
+customer 98 dequeued at time 23 and he has been waiting for 9 minutes
+customer 98 got to window 9 at time 23
+customer 99 dequeued at time 23 and he has been waiting for 8 minutes
+customer 99 got to window 10 at time 23
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 23        served: 89        waiting: 63               *
+*                                                                     *
+*               Window 1       serving customer  93                   *
+*               Window 2       serving customer  94                   *
+*               Window 3       serving customer  95                   *
+*               Window 4       serving customer  96                   *
+*               Window 5       serving customer  97                   *
+*               Window 6       serving customer  83                   *
+*               Window 7       serving customer  90                   *
+*               Window 8       serving customer  91                   *
+*               Window 9       serving customer  98                   *
+*               Window 10      serving customer  99                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 24
+[Customer Movements]
+
+customer 163 enqueued in queue-1 at time 24
+customer 164 enqueued in queue-1 at time 24
+customer 165 enqueued in queue-1 at time 24
+customer 166 enqueued in queue-1 at time 24
+customer 167 enqueued in queue-1 at time 24
+customer 168 enqueued in queue-1 at time 24
+customer 169 enqueued in queue-1 at time 24
+customer 170 enqueued in queue-1 at time 24
+customer 97 left window 5 at time 24 and his service-time is 1
+customer 97 left the bank at time 24 and it cost him 10 minutes in total
+customer 83 left window 6 at time 24 and his service-time is 4
+customer 83 left the bank at time 24 and it cost him 13 minutes in total
+customer 100 dequeued at time 24 and he has been waiting for 9 minutes
+customer 100 got to window 5 at time 24
+customer 101 dequeued at time 24 and he has been waiting for 9 minutes
+customer 101 got to window 6 at time 24
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 24        served: 91        waiting: 69               *
+*                                                                     *
+*               Window 1       serving customer  93                   *
+*               Window 2       serving customer  94                   *
+*               Window 3       serving customer  95                   *
+*               Window 4       serving customer  96                   *
+*               Window 5       serving customer  100                  *
+*               Window 6       serving customer  101                  *
+*               Window 7       serving customer  90                   *
+*               Window 8       serving customer  91                   *
+*               Window 9       serving customer  98                   *
+*               Window 10      serving customer  99                   *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 25
+[Customer Movements]
+
+customer 171 enqueued in queue-1 at time 25
+customer 172 enqueued in queue-1 at time 25
+customer 173 enqueued in queue-1 at time 25
+customer 174 enqueued in queue-1 at time 25
+customer 175 enqueued in queue-1 at time 25
+customer 176 enqueued in queue-1 at time 25
+customer 177 enqueued in queue-1 at time 25
+customer 178 enqueued in queue-1 at time 25
+customer 179 enqueued in queue-1 at time 25
+customer 180 enqueued in queue-1 at time 25
+customer 181 enqueued in queue-1 at time 25
+customer 182 enqueued in queue-1 at time 25
+customer 183 enqueued in queue-1 at time 25
+customer 93 left window 1 at time 25 and his service-time is 2
+customer 93 left the bank at time 25 and it cost him 12 minutes in total
+customer 101 left window 6 at time 25 and his service-time is 1
+customer 101 left the bank at time 25 and it cost him 10 minutes in total
+customer 90 left window 7 at time 25 and his service-time is 3
+customer 90 left the bank at time 25 and it cost him 12 minutes in total
+customer 99 left window 10 at time 25 and his service-time is 2
+customer 99 left the bank at time 25 and it cost him 10 minutes in total
+customer 102 dequeued at time 25 and he has been waiting for 10 minutes
+customer 102 got to window 1 at time 25
+customer 103 dequeued at time 25 and he has been waiting for 10 minutes
+customer 103 got to window 6 at time 25
+customer 104 dequeued at time 25 and he has been waiting for 10 minutes
+customer 104 got to window 7 at time 25
+customer 105 dequeued at time 25 and he has been waiting for 10 minutes
+customer 105 got to window 10 at time 25
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 25        served: 95        waiting: 78               *
+*                                                                     *
+*               Window 1       serving customer  102                  *
+*               Window 2       serving customer  94                   *
+*               Window 3       serving customer  95                   *
+*               Window 4       serving customer  96                   *
+*               Window 5       serving customer  100                  *
+*               Window 6       serving customer  103                  *
+*               Window 7       serving customer  104                  *
+*               Window 8       serving customer  91                   *
+*               Window 9       serving customer  98                   *
+*               Window 10      serving customer  105                  *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 26
+[Customer Movements]
+
+customer 184 enqueued in queue-1 at time 26
+customer 185 enqueued in queue-1 at time 26
+customer 186 enqueued in queue-1 at time 26
+customer 187 enqueued in queue-1 at time 26
+customer 188 enqueued in queue-1 at time 26
+customer 189 enqueued in queue-1 at time 26
+customer 190 enqueued in queue-1 at time 26
+customer 95 left window 3 at time 26 and his service-time is 3
+customer 95 left the bank at time 26 and it cost him 12 minutes in total
+customer 96 left window 4 at time 26 and his service-time is 3
+customer 96 left the bank at time 26 and it cost him 12 minutes in total
+customer 100 left window 5 at time 26 and his service-time is 2
+customer 100 left the bank at time 26 and it cost him 11 minutes in total
+customer 104 left window 7 at time 26 and his service-time is 1
+customer 104 left the bank at time 26 and it cost him 11 minutes in total
+customer 91 left window 8 at time 26 and his service-time is 4
+customer 91 left the bank at time 26 and it cost him 13 minutes in total
+customer 106 dequeued at time 26 and he has been waiting for 11 minutes
+customer 106 got to window 3 at time 26
+customer 107 dequeued at time 26 and he has been waiting for 11 minutes
+customer 107 got to window 4 at time 26
+customer 108 dequeued at time 26 and he has been waiting for 11 minutes
+customer 108 got to window 5 at time 26
+customer 109 dequeued at time 26 and he has been waiting for 11 minutes
+customer 109 got to window 7 at time 26
+customer 110 dequeued at time 26 and he has been waiting for 10 minutes
+customer 110 got to window 8 at time 26
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 26        served: 100       waiting: 80               *
+*                                                                     *
+*               Window 1       serving customer  102                  *
+*               Window 2       serving customer  94                   *
+*               Window 3       serving customer  106                  *
+*               Window 4       serving customer  107                  *
+*               Window 5       serving customer  108                  *
+*               Window 6       serving customer  103                  *
+*               Window 7       serving customer  109                  *
+*               Window 8       serving customer  110                  *
+*               Window 9       serving customer  98                   *
+*               Window 10      serving customer  105                  *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 27
+[Customer Movements]
+
+customer 191 enqueued in queue-1 at time 27
+customer 192 enqueued in queue-1 at time 27
+customer 193 enqueued in queue-1 at time 27
+customer 194 enqueued in queue-1 at time 27
+customer 195 enqueued in queue-1 at time 27
+customer 196 enqueued in queue-1 at time 27
+customer 197 enqueued in queue-1 at time 27
+customer 198 enqueued in queue-1 at time 27
+customer 199 enqueued in queue-1 at time 27
+customer 200 enqueued in queue-1 at time 27
+customer 201 enqueued in queue-1 at time 27
+customer 202 enqueued in queue-1 at time 27
+customer 203 enqueued in queue-1 at time 27
+customer 204 enqueued in queue-1 at time 27
+customer 94 left window 2 at time 27 and his service-time is 4
+customer 94 left the bank at time 27 and it cost him 13 minutes in total
+customer 107 left window 4 at time 27 and his service-time is 1
+customer 107 left the bank at time 27 and it cost him 12 minutes in total
+customer 103 left window 6 at time 27 and his service-time is 2
+customer 103 left the bank at time 27 and it cost him 12 minutes in total
+customer 98 left window 9 at time 27 and his service-time is 4
+customer 98 left the bank at time 27 and it cost him 13 minutes in total
+customer 105 left window 10 at time 27 and his service-time is 2
+customer 105 left the bank at time 27 and it cost him 12 minutes in total
+customer 111 dequeued at time 27 and he has been waiting for 11 minutes
+customer 111 got to window 2 at time 27
+customer 112 dequeued at time 27 and he has been waiting for 11 minutes
+customer 112 got to window 4 at time 27
+customer 113 dequeued at time 27 and he has been waiting for 11 minutes
+customer 113 got to window 6 at time 27
+customer 114 dequeued at time 27 and he has been waiting for 11 minutes
+customer 114 got to window 9 at time 27
+customer 115 dequeued at time 27 and he has been waiting for 11 minutes
+customer 115 got to window 10 at time 27
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 27        served: 105       waiting: 89               *
+*                                                                     *
+*               Window 1       serving customer  102                  *
+*               Window 2       serving customer  111                  *
+*               Window 3       serving customer  106                  *
+*               Window 4       serving customer  112                  *
+*               Window 5       serving customer  108                  *
+*               Window 6       serving customer  113                  *
+*               Window 7       serving customer  109                  *
+*               Window 8       serving customer  110                  *
+*               Window 9       serving customer  114                  *
+*               Window 10      serving customer  115                  *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 28
+[Customer Movements]
+
+customer 205 enqueued in queue-1 at time 28
+customer 206 enqueued in queue-1 at time 28
+customer 207 enqueued in queue-1 at time 28
+customer 208 enqueued in queue-1 at time 28
+customer 209 enqueued in queue-1 at time 28
+customer 210 enqueued in queue-1 at time 28
+customer 211 enqueued in queue-1 at time 28
+customer 106 left window 3 at time 28 and his service-time is 2
+customer 106 left the bank at time 28 and it cost him 13 minutes in total
+customer 114 left window 9 at time 28 and his service-time is 1
+customer 114 left the bank at time 28 and it cost him 12 minutes in total
+customer 115 left window 10 at time 28 and his service-time is 1
+customer 115 left the bank at time 28 and it cost him 12 minutes in total
+customer 116 dequeued at time 28 and he has been waiting for 12 minutes
+customer 116 got to window 3 at time 28
+customer 117 dequeued at time 28 and he has been waiting for 11 minutes
+customer 117 got to window 9 at time 28
+customer 118 dequeued at time 28 and he has been waiting for 11 minutes
+customer 118 got to window 10 at time 28
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 28        served: 108       waiting: 93               *
+*                                                                     *
+*               Window 1       serving customer  102                  *
+*               Window 2       serving customer  111                  *
+*               Window 3       serving customer  116                  *
+*               Window 4       serving customer  112                  *
+*               Window 5       serving customer  108                  *
+*               Window 6       serving customer  113                  *
+*               Window 7       serving customer  109                  *
+*               Window 8       serving customer  110                  *
+*               Window 9       serving customer  117                  *
+*               Window 10      serving customer  118                  *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                          Dialog at time: 29
+[Customer Movements]
+
+customer 212 enqueued in queue-1 at time 29
+customer 213 enqueued in queue-1 at time 29
+customer 214 enqueued in queue-1 at time 29
+customer 215 enqueued in queue-1 at time 29
+customer 216 enqueued in queue-1 at time 29
+customer 217 enqueued in queue-1 at time 29
+customer 218 enqueued in queue-1 at time 29
+customer 219 enqueued in queue-1 at time 29
+customer 220 enqueued in queue-1 at time 29
+customer 221 enqueued in queue-1 at time 29
+customer 222 enqueued in queue-1 at time 29
+customer 223 enqueued in queue-1 at time 29
+customer 102 left window 1 at time 29 and his service-time is 4
+customer 102 left the bank at time 29 and it cost him 14 minutes in total
+customer 111 left window 2 at time 29 and his service-time is 2
+customer 111 left the bank at time 29 and it cost him 13 minutes in total
+customer 116 left window 3 at time 29 and his service-time is 1
+customer 116 left the bank at time 29 and it cost him 13 minutes in total
+customer 108 left window 5 at time 29 and his service-time is 3
+customer 108 left the bank at time 29 and it cost him 14 minutes in total
+customer 119 dequeued at time 29 and he has been waiting for 12 minutes
+customer 119 got to window 1 at time 29
+customer 120 dequeued at time 29 and he has been waiting for 12 minutes
+customer 120 got to window 2 at time 29
+customer 121 dequeued at time 29 and he has been waiting for 12 minutes
+customer 121 got to window 3 at time 29
+customer 122 dequeued at time 29 and he has been waiting for 11 minutes
+customer 122 got to window 5 at time 29
+
+[Window Information]
+
+*******************************report**********************************
+*         Time: 29        served: 112       waiting: 101              *
+*                                                                     *
+*               Window 1       serving customer  119                  *
+*               Window 2       serving customer  120                  *
+*               Window 3       serving customer  121                  *
+*               Window 4       serving customer  112                  *
+*               Window 5       serving customer  122                  *
+*               Window 6       serving customer  113                  *
+*               Window 7       serving customer  109                  *
+*               Window 8       serving customer  110                  *
+*               Window 9       serving customer  117                  *
+*               Window 10      serving customer  118                  *
+***********************************************************************
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+                 Dialog at time: 30
+
+Bank is going to shutdown and no one enqueue
+
+[Customer Movements]
+
+unserved customer 123 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 123 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 124 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 124 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 125 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 125 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 126 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 126 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 127 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 127 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 128 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 128 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 129 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 129 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 130 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 130 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 131 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 131 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 132 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 132 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 133 dequeued at time 30 and he has been waiting for 12 minutes
+unserved customer 133 left the bank at time 30 and it cost him 12 minutes in total
+unserved customer 134 dequeued at time 30 and he has been waiting for 11 minutes
+unserved customer 134 left the bank at time 30 and it cost him 11 minutes in total
+unserved customer 135 dequeued at time 30 and he has been waiting for 11 minutes
+unserved customer 135 left the bank at time 30 and it cost him 11 minutes in total
+unserved customer 136 dequeued at time 30 and he has been waiting for 11 minutes
+unserved customer 136 left the bank at time 30 and it cost him 11 minutes in total
+unserved customer 137 dequeued at time 30 and he has been waiting for 11 minutes
+unserved customer 137 left the bank at time 30 and it cost him 11 minutes in total
+unserved customer 138 dequeued at time 30 and he has been waiting for 11 minutes
+unserved customer 138 left the bank at time 30 and it cost him 11 minutes in total
+unserved customer 139 dequeued at time 30 and he has been waiting for 11 minutes
+unserved customer 139 left the bank at time 30 and it cost him 11 minutes in total
+unserved customer 140 dequeued at time 30 and he has been waiting for 10 minutes
+unserved customer 140 left the bank at time 30 and it cost him 10 minutes in total
+unserved customer 141 dequeued at time 30 and he has been waiting for 10 minutes
+unserved customer 141 left the bank at time 30 and it cost him 10 minutes in total
+unserved customer 142 dequeued at time 30 and he has been waiting for 10 minutes
+unserved customer 142 left the bank at time 30 and it cost him 10 minutes in total
+unserved customer 143 dequeued at time 30 and he has been waiting for 10 minutes
+unserved customer 143 left the bank at time 30 and it cost him 10 minutes in total
+unserved customer 144 dequeued at time 30 and he has been waiting for 9 minutes
+unserved customer 144 left the bank at time 30 and it cost him 9 minutes in total
+unserved customer 145 dequeued at time 30 and he has been waiting for 9 minutes
+unserved customer 145 left the bank at time 30 and it cost him 9 minutes in total
+unserved customer 146 dequeued at time 30 and he has been waiting for 9 minutes
+unserved customer 146 left the bank at time 30 and it cost him 9 minutes in total
+unserved customer 147 dequeued at time 30 and he has been waiting for 9 minutes
+unserved customer 147 left the bank at time 30 and it cost him 9 minutes in total
+unserved customer 148 dequeued at time 30 and he has been waiting for 9 minutes
+unserved customer 148 left the bank at time 30 and it cost him 9 minutes in total
+unserved customer 149 dequeued at time 30 and he has been waiting for 9 minutes
+unserved customer 149 left the bank at time 30 and it cost him 9 minutes in total
+unserved customer 150 dequeued at time 30 and he has been waiting for 9 minutes
+unserved customer 150 left the bank at time 30 and it cost him 9 minutes in total
+unserved customer 151 dequeued at time 30 and he has been waiting for 8 minutes
+unserved customer 151 left the bank at time 30 and it cost him 8 minutes in total
+unserved customer 152 dequeued at time 30 and he has been waiting for 8 minutes
+unserved customer 152 left the bank at time 30 and it cost him 8 minutes in total
+unserved customer 153 dequeued at time 30 and he has been waiting for 8 minutes
+unserved customer 153 left the bank at time 30 and it cost him 8 minutes in total
+unserved customer 154 dequeued at time 30 and he has been waiting for 8 minutes
+unserved customer 154 left the bank at time 30 and it cost him 8 minutes in total
+unserved customer 155 dequeued at time 30 and he has been waiting for 8 minutes
+unserved customer 155 left the bank at time 30 and it cost him 8 minutes in total
+unserved customer 156 dequeued at time 30 and he has been waiting for 8 minutes
+unserved customer 156 left the bank at time 30 and it cost him 8 minutes in total
+unserved customer 157 dequeued at time 30 and he has been waiting for 8 minutes
+unserved customer 157 left the bank at time 30 and it cost him 8 minutes in total
+unserved customer 158 dequeued at time 30 and he has been waiting for 7 minutes
+unserved customer 158 left the bank at time 30 and it cost him 7 minutes in total
+unserved customer 159 dequeued at time 30 and he has been waiting for 7 minutes
+unserved customer 159 left the bank at time 30 and it cost him 7 minutes in total
+unserved customer 160 dequeued at time 30 and he has been waiting for 7 minutes
+unserved customer 160 left the bank at time 30 and it cost him 7 minutes in total
+unserved customer 161 dequeued at time 30 and he has been waiting for 7 minutes
+unserved customer 161 left the bank at time 30 and it cost him 7 minutes in total
+unserved customer 162 dequeued at time 30 and he has been waiting for 7 minutes
+unserved customer 162 left the bank at time 30 and it cost him 7 minutes in total
+unserved customer 163 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 163 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 164 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 164 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 165 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 165 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 166 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 166 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 167 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 167 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 168 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 168 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 169 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 169 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 170 dequeued at time 30 and he has been waiting for 6 minutes
+unserved customer 170 left the bank at time 30 and it cost him 6 minutes in total
+unserved customer 171 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 171 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 172 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 172 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 173 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 173 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 174 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 174 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 175 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 175 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 176 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 176 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 177 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 177 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 178 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 178 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 179 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 179 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 180 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 180 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 181 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 181 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 182 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 182 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 183 dequeued at time 30 and he has been waiting for 5 minutes
+unserved customer 183 left the bank at time 30 and it cost him 5 minutes in total
+unserved customer 184 dequeued at time 30 and he has been waiting for 4 minutes
+unserved customer 184 left the bank at time 30 and it cost him 4 minutes in total
+unserved customer 185 dequeued at time 30 and he has been waiting for 4 minutes
+unserved customer 185 left the bank at time 30 and it cost him 4 minutes in total
+unserved customer 186 dequeued at time 30 and he has been waiting for 4 minutes
+unserved customer 186 left the bank at time 30 and it cost him 4 minutes in total
+unserved customer 187 dequeued at time 30 and he has been waiting for 4 minutes
+unserved customer 187 left the bank at time 30 and it cost him 4 minutes in total
+unserved customer 188 dequeued at time 30 and he has been waiting for 4 minutes
+unserved customer 188 left the bank at time 30 and it cost him 4 minutes in total
+unserved customer 189 dequeued at time 30 and he has been waiting for 4 minutes
+unserved customer 189 left the bank at time 30 and it cost him 4 minutes in total
+unserved customer 190 dequeued at time 30 and he has been waiting for 4 minutes
+unserved customer 190 left the bank at time 30 and it cost him 4 minutes in total
+unserved customer 191 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 191 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 192 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 192 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 193 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 193 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 194 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 194 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 195 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 195 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 196 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 196 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 197 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 197 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 198 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 198 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 199 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 199 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 200 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 200 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 201 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 201 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 202 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 202 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 203 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 203 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 204 dequeued at time 30 and he has been waiting for 3 minutes
+unserved customer 204 left the bank at time 30 and it cost him 3 minutes in total
+unserved customer 205 dequeued at time 30 and he has been waiting for 2 minutes
+unserved customer 205 left the bank at time 30 and it cost him 2 minutes in total
+unserved customer 206 dequeued at time 30 and he has been waiting for 2 minutes
+unserved customer 206 left the bank at time 30 and it cost him 2 minutes in total
+unserved customer 207 dequeued at time 30 and he has been waiting for 2 minutes
+unserved customer 207 left the bank at time 30 and it cost him 2 minutes in total
+unserved customer 208 dequeued at time 30 and he has been waiting for 2 minutes
+unserved customer 208 left the bank at time 30 and it cost him 2 minutes in total
+unserved customer 209 dequeued at time 30 and he has been waiting for 2 minutes
+unserved customer 209 left the bank at time 30 and it cost him 2 minutes in total
+unserved customer 210 dequeued at time 30 and he has been waiting for 2 minutes
+unserved customer 210 left the bank at time 30 and it cost him 2 minutes in total
+unserved customer 211 dequeued at time 30 and he has been waiting for 2 minutes
+unserved customer 211 left the bank at time 30 and it cost him 2 minutes in total
+unserved customer 212 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 212 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 213 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 213 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 214 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 214 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 215 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 215 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 216 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 216 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 217 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 217 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 218 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 218 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 219 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 219 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 220 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 220 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 221 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 221 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 222 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 222 left the bank at time 30 and it cost him 1 minutes in total
+unserved customer 223 dequeued at time 30 and he has been waiting for 1 minutes
+unserved customer 223 left the bank at time 30 and it cost him 1 minutes in total
+customer 119 left window 1 at time 31 and his service-time is 2
+customer 119 left the bank at time 31 and it cost him 14 minutes in total
+customer 120 left window 2 at time 31 and his service-time is 2
+customer 120 left the bank at time 31 and it cost him 14 minutes in total
+customer 121 left window 3 at time 33 and his service-time is 4
+customer 121 left the bank at time 33 and it cost him 16 minutes in total
+customer 112 left window 4 at time 31 and his service-time is 4
+customer 112 left the bank at time 31 and it cost him 15 minutes in total
+customer 122 left window 5 at time 30 and his service-time is 1
+customer 122 left the bank at time 30 and it cost him 12 minutes in total
+customer 113 left window 6 at time 31 and his service-time is 4
+customer 113 left the bank at time 31 and it cost him 15 minutes in total
+customer 109 left window 7 at time 30 and his service-time is 4
+customer 109 left the bank at time 30 and it cost him 15 minutes in total
+customer 110 left window 8 at time 30 and his service-time is 4
+customer 110 left the bank at time 30 and it cost him 14 minutes in total
+customer 117 left window 9 at time 30 and his service-time is 2
+customer 117 left the bank at time 30 and it cost him 13 minutes in total
+customer 118 left window 10 at time 30 and his service-time is 2
+customer 118 left the bank at time 30 and it cost him 13 minutes in total
+
+All work done!
+Bank shutdowned!
+
+=======================================================================
+                            FINAL DIALOG
+
+[statistic information]
+
+The number of total enqueued-customers:                     223
+The number of served-customers:                             122
+The number of unserved-customers:                           101
+The total-waiting time of served-customers:                 757
+The average waiting time of served-customers:               6.20492
+The total-waiting time of unserved-customers:               601
+The average waiting time of unserved-customers:             5.9505
+The total-waiting time of all customers:                    1358
+The average waiting time of all customers:                  6.08969
+
+window-id           served-number       serving-time
+       
+Window  1           11                  31                  
+Window  2           13                  31                  
+Window  3           13                  33                  
+Window  4           12                  31                  
+Window  5           14                  30                  
+Window  6           12                  31                  
+Window  7           12                  29                  
+Window  8           12                  29                  
+Window  9           11                  29                  
+Window  10          12                  29                  
+=======================================================================

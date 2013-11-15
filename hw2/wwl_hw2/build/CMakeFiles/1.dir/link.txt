@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/1.dir/Client.cpp.o CMakeFiles/1.dir/bankqueue.cpp.o CMakeFiles/1.dir/Window.cpp.o CMakeFiles/1.dir/Random.cpp.o  -o 1 -rdynamic 
