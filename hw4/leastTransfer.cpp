@@ -21,23 +21,23 @@ const int MAX = 1454;
 // 车次结构体，包含种类、上下行路线所有站点
 struct Line
 {
-	string busType_;
-	vector<int> line_[2];
+	string busType_; // 车次种类
+	vector<int> line_[2]; // line_[0]为上行线，line_[1]为下行线
 	Line(string busType = "")
 		:busType_(busType)
 	{}
-	void push(int lineNum, int node)
+	void push(int lineNum, int StationNum) // 往line_[lineNum]中压入站点node
 	{
-		line_[lineNum].push_back(node);
+		line_[lineNum].push_back(StationNum);
 	}
 };
 
 // 站点结构体，包含站点编号与“距离”
 struct Station
 {
-	int num_;
-	unsigned int dist_;
-	Station(int num) :num_(num),dist_(0xffffffff) {}
+	int num_;// 站点编号
+	unsigned int dist_; // 站点到起始站的最小“距离”，即换乘最少代价
+	Station(int num) :num_(num),dist_(0xffffffff) {} // 初始化dist_为最大值
 	void setMaxDist()
 	{
 		dist_ = 0xffffffff;
@@ -73,7 +73,7 @@ vector<int> parent[MAX];// 每个站点可有多个父亲，使用向量保存
 
 int total = 0; // 站点总量，录入数据后会更新数值
 
-static int countWay = 1;
+static int countWay = 1; // 用于计数换乘方案
 
 // 初始化distArr、known和parent数组
 void init()
@@ -85,7 +85,7 @@ void init()
 		parent[i].clear();
 }
 
-// 【测试】，打印转乘站点关系
+// 【测试】，打印转乘站点关系，递归打印起始站-转乘站-终点站的父子关系
 void showParent(int ori, int des)
 {
 	if(des == ori)
@@ -144,7 +144,7 @@ void printHowToTransfer(list<int>::iterator beg, list<int>::iterator end)
 	}
 }
 
-// inorder递归遍历树方法，为print(int,int)所调用
+// inorder递归遍历树方法，当从终点站回溯到达起始站时，生成链表route路径。为print(int,int)所调用
 void inorder(list<int> & route,int oriNum,int desNum)
 {
 	if(desNum == oriNum)
@@ -180,14 +180,14 @@ void inorder(list<int> & route,int oriNum,int desNum)
 	}
 }
 
-// 打印所有转乘方案，先调用inorder遍历从终点站到起始站的“树”，得到route
+// 打印方案的顶层函数，调用一系列子函数
 void print(int oriNum,int desNum)
 {
 	list<int> route;
 	inorder(route,oriNum,desNum);
 }
 
-// 简单遍历得到换乘次数
+// 【测试】简单遍历得到换乘次数，代码中没使用该函数
 int getTransferTimes(int oriNum,int desNum)
 {
 	int transfertimes = 0;
@@ -200,7 +200,7 @@ int getTransferTimes(int oriNum,int desNum)
 	return --transfertimes;
 }
 
-// 查询-dijkstra算法
+// 查询，比较简单的dijkstra实现。不同之处在于父母数不唯一。
 void work(string & ori,string & des)
 {
 	int oriNum = getNum[ori];
@@ -244,7 +244,7 @@ void work(string & ori,string & des)
 	else
 	{
 		// 打印最少换乘次数，可直接由distArr[desNum]-1得到;
-		// 也可使用函数 getTransferTimes(ori,des) 遍历树根到树叶的一程得出
+		// 也可使用函数 getTransferTimes(ori,des) 遍历树根到树叶的其中一条路径得出
 		cout << "亲，要换乘【" <<  distArr[desNum]->dist_-1 << "】次哦～\n\n"
 			 <<"具体方案如下：\n\n";
 
@@ -255,7 +255,7 @@ void work(string & ori,string & des)
 		print(oriNum,desNum);
 	}
 }
-// 清屏、暂停函数
+// 清屏、暂停函数，跨平台
 void clear(int t = 0)
 {
 	if(t > 0)
@@ -293,7 +293,7 @@ int main(int argc, char const *argv[])
 		if(busId == -1)
 			break;
 		data >> busType;
-		Line *t = new Line(busType);
+		Line *t = new Line(busType);// 申请新车次
 		for (int i = 0; i < 2; ++i)
 		{
 			int temp;
@@ -315,7 +315,7 @@ int main(int argc, char const *argv[])
 		}
 		allLines[busId] = t;
 	}
-	nodeSet.clear();
+	nodeSet.clear();// 回收
 	data.close();
 
 	// 【测试】，确认信息录入无误，测试得知共有1454个站点,293辆公交车，586条线路（区别上下行）
