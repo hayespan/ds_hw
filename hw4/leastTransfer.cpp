@@ -10,6 +10,9 @@
 #include <queue>
 #include <set>
 #include <map>
+#ifdef _WIN32
+#include <Windows.h>
+#endif
 using namespace std;
 
 // 站点的最大数量，可先设置较大数量，测试出站点数后再改为站点数以节省内存空间，如此次数据为1454
@@ -70,6 +73,8 @@ vector<int> parent[MAX];// 每个站点可有多个父亲，使用向量保存
 
 int total = 0; // 站点总量，录入数据后会更新数值
 
+static int countWay = 1;
+
 // 初始化distArr、known和parent数组
 void init()
 {
@@ -87,12 +92,12 @@ void showParent(int ori, int des)
 		return;
 	else
 	{
-		cout << getName[des] << "'s parent: ";
+		cout << getName[des] << "'s parent(s): ";
 		for (int i = 0; i < parent[des].size(); ++i)
 		{
 			cout << getName[parent[des][i]] << " ";
 		}
-		cout << endl;
+		cout << "\n";
 		for (int i = 0; i < parent[des].size(); ++i)
 			showParent(ori,parent[des][i]);
 	}
@@ -109,7 +114,7 @@ void printHowToTransfer(list<int>::iterator beg, list<int>::iterator end)
 		beg--;
 		if(nextBeg == end)
 		{
-			cout << endl;
+			cout << "\n";
 			return;
 		}
 		else
@@ -145,16 +150,25 @@ void inorder(list<int> & route,int oriNum,int desNum)
 	if(desNum == oriNum)
 	{
 		route.push_front(oriNum);
+		printf("———————————————————————————————————————————————————————————————————————————————\n");
+		cout << "【方案" << countWay++ << "】 ";
+		int size = route.size(),count = 0;
+		for (list<int>::iterator i = route.begin(); i != route.end(); ++i)
+		{
+			cout << getName[*i];
+			if(count++ != size-1)
+				cout << " —> "; 
+		}
+		cout << "\n\n";
 		// 【测试】
 		// for(list<int>::iterator i = route.begin();i!=route.end();i++)
 		// {
 		// 	cout << getName[*i] << " -> ";
 		// }
-		// cout << endl;
+		// cout << "\n";
 
 		// 打印换乘方案的具体
 		printHowToTransfer(route.begin(),route.end());
-
 		route.pop_front();
 	}
 	else
@@ -186,7 +200,7 @@ int getTransferTimes(int oriNum,int desNum)
 	return --transfertimes;
 }
 
-// 查询
+// 查询-dijkstra算法
 void work(string & ori,string & des)
 {
 	int oriNum = getNum[ori];
@@ -226,7 +240,7 @@ void work(string & ori,string & des)
 	// 则终点站的parent是起始站并且dist为255，此时提示无法到达
 	// （可能要步行一段距离或者通过别的方式，暂不予考虑）
 	if(parent[desNum][0] == oriNum && distArr[desNum]->dist_ == 255)
-		cout << "无法到达，可能要采取其它方式哦～\n";
+		cout << "无法到达，可能要采取其它方式哦～\n\n";
 	else
 	{
 		// 打印最少换乘次数，可直接由distArr[desNum]-1得到;
@@ -234,18 +248,42 @@ void work(string & ori,string & des)
 		cout << "亲，要换乘【" <<  distArr[desNum]->dist_-1 << "】次哦～\n\n"
 			 <<"具体方案如下：\n\n";
 
-		// 测试，打印站点的父子关系（打印从终点站到起始站的全部可能转站点））
+		// 【测试】，打印站点的父子关系（打印从终点站到起始站的全部可能转站点））
 		// showParent(oriNum,desNum);
 
 		// 打印具体方案
 		print(oriNum,desNum);
 	}
 }
+// 清屏、暂停函数
+void clear(int t = 0)
+{
+	if(t > 0)
+	{
+		#ifdef _WIN32
+			Sleep(1000*t);
+		#else
+			sleep(t);
+		#endif
+	}
+	#ifdef _WIN32
+		system("cls");
+	#else
+		system("clear");
+	#endif
+}
 
 int main(int argc, char const *argv[])
 {
+	cout << "开始录入站点数据...\n";
 	// 公交数据录入
-	fstream data("alllines.txt",ios::in);
+	fstream data("alllines.txt");
+	if(data.fail())
+	{
+		cout << "缺失文件alllines.txt，2秒后退出...\n";
+		clear(2);
+		return 0;
+	}
 	while(1)
 	{
 		int busId;// 车次编号
@@ -281,32 +319,32 @@ int main(int argc, char const *argv[])
 	data.close();
 
 	// 【测试】，确认信息录入无误，测试得知共有1454个站点,293辆公交车，586条线路（区别上下行）
-	// cout << "The size of getNum is " << getNum.size() << endl
-	// 	 << "The size of getName is " << getName.size() << endl
-	// 	 << "The size of allLines is " << allLines.size() << endl;
+	// cout << "The size of getNum is " << getNum.size() << "\n"
+	// 	 << "The size of getName is " << getName.size() << "\n"
+	// 	 << "The size of allLines is " << allLines.size() << "\n";
 	// for (map<string,int>::iterator i = getNum.begin();i != getNum.end();i++)
-	// 	cout << i->first << " : " << i->second << endl;
+	// 	cout << i->first << " : " << i->second << "\n";
 	// for (int i=0;i<getName.size();i++)
-	// 	cout << i << " : " << getName[i] << endl;
+	// 	cout << i << " : " << getName[i] << "\n";
 	// for (int i = 0; i < total; ++i)
 	// {
-	// 	cout << getName[i] << ":" << endl;
+	// 	cout << getName[i] << ":\n";
 	// 	for (int j = 0; j < getLines[i].size(); ++j)
 	// 	{
 	// 		cout << "(" << getLines[i].at(j).first << "," << getLines[i].at(j).second << ")" <<" ";
 	// 	}
-	// 	cout << endl;
+	// 	cout << "\n";
 	// }
 	// for(map<int,Line *>::iterator i = allLines.begin();i!=allLines.end();i++)
 	// {
-	// 	cout << i->first << endl
-	// 		 << i->second->busType_<<endl;
+	// 	cout << i->first << "\n"
+	// 		 << i->second->busType_<<"\n";
 	// 	for (int j = 0; j < 2; ++j)
 	// 	{
 	// 		int size = i->second->line_[j].size();
-	// 		cout << size << endl;
+	// 		cout << size << "\n";
 	// 		for (int k = 0; k < size; ++k)
-	// 			cout << getName.at(i->second->line_[j][k]) << endl;
+	// 			cout << getName.at(i->second->line_[j][k]) << "\n";
 	// 	}
 	// }
 
@@ -334,8 +372,11 @@ int main(int argc, char const *argv[])
 	// 	{
 	// 		cout << g[i][j]-'\0' << " ";
 	// 	}
-	// 	cout << endl;
+	// 	cout << "\n";
 	// }
+
+	cout << "站点数据处理完成！\n";
+	clear(1);
 
 	// 查询
 	while(1)
@@ -348,15 +389,21 @@ int main(int argc, char const *argv[])
 		cin >> des;
 		if(ori == des || getNum.find(ori) == getNum.end() || getNum.find(des) == getNum.end())
 		{
+			clear();
 			cout << "请重新输入！\n";// 如果输入无效提示重新输入
+			clear(1);
 			continue;
 		}
+		clear();
 		cout << "\n起始站：" << ori 
 			 << "\n终点站：" << des 
 			 << "\n\n";
 
 		// 初始化dijkstra算法所需相关数据，每次进入循环都还原distArr、known和parent数组
 		init();
+
+		// 初始化方案数为1
+		countWay = 1;
 
 		// dijkstra算法，进行查询，打印转乘结果
 		work(ori,des);
@@ -367,7 +414,8 @@ int main(int argc, char const *argv[])
 		cin >> quitSignal;
 		if(quitSignal == 'y')
 			break;
-		system("clear");
+		clear();
 	}
+	clear();
 	return 0;
 }
