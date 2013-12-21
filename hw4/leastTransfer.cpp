@@ -10,6 +10,7 @@
 #include <queue>
 #include <set>
 #include <map>
+#include <time.h>
 #ifdef _WIN32
 #include <Windows.h>
 #endif
@@ -32,22 +33,22 @@ struct Line
 	}
 };
 
-// 站点结构体，包含站点编号与“距离”
+// 站点结构体，包含站点编号与“距离”（使用unsigned char类型）
 struct Station
 {
 	int num_;// 站点编号
-	unsigned int dist_; // 站点到起始站的最小“距离”，即换乘最少代价
-	Station(int num) :num_(num),dist_(0xffffffff) {} // 初始化dist_为最大值
+	unsigned char dist_; // 站点到起始站的最小“距离”，即换乘最少代价
+	Station(int num) :num_(num),dist_(0xff) {} // 初始化dist_为最大值
 	void setMaxDist()
 	{
-		dist_ = 0xffffffff;
+		dist_ = 0xff;
 	}
 };
 
 // 重载lessThan运算符用于priority_queue
 struct op
 {
-	bool operator()(const Station * const a, const Station * const b)
+	bool operator()(Station * a, Station * b)
 	{
 		return a->dist_>b->dist_;
 	}
@@ -73,7 +74,7 @@ vector<int> parent[MAX];// 每个站点可有多个父亲，使用向量保存
 
 int total = 0; // 站点总量，录入数据后会更新数值
 
-static int countWay = 1; // 用于计数换乘方案
+int countWay = 1,step = 0; // 用于计数换乘方案和换乘步骤
 
 // 初始化distArr、known和parent数组
 void init()
@@ -115,10 +116,12 @@ void printHowToTransfer(list<int>::iterator beg, list<int>::iterator end)
 		if(nextBeg == end)
 		{
 			cout << "\n";
+			step = 0;
 			return;
 		}
 		else
 		{
+			cout << "第" << ++step << "步:\n";
 			for(int i = 0; i < getLines[*beg].size();i++)
 			{
 				int lineNum = getLines[*beg][i].first;
@@ -130,7 +133,7 @@ void printHowToTransfer(list<int>::iterator beg, list<int>::iterator end)
 					continue;
 				if(begPos < nextBegPos)
 				{
-					cout << "从【" << getName[*beg] << "】站搭乘 <" << lineNum << "号公交车(" 
+					cout << " 从【" << getName[*beg] << "】站搭乘 <" << lineNum << "号公交车(" 
 						 <<  t->busType_ << ")-"; 
 					if(lineDirect)
 						cout << "下行线";
@@ -151,13 +154,13 @@ void inorder(list<int> & route,int oriNum,int desNum)
 	{
 		route.push_front(oriNum);
 		printf("———————————————————————————————————————————————————————————————————————————————\n");
-		cout << "【方案" << countWay++ << "】 ";
+		cout << "● 方案" << countWay++ << " ";
 		int size = route.size(),count = 0;
 		for (list<int>::iterator i = route.begin(); i != route.end(); ++i)
 		{
 			cout << getName[*i];
 			if(count++ != size-1)
-				cout << " —> "; 
+				cout << " → "; 
 		}
 		cout << "\n\n";
 		// 【测试】
@@ -200,15 +203,37 @@ int getTransferTimes(int oriNum,int desNum)
 	return --transfertimes;
 }
 
+// 【测试】打印直达矩阵
+void printG()
+{	
+	for (int i = 0; i < total; ++i)
+	{
+		for (int j = 0; j < total; ++j)
+		{
+			cout << g[i][j]-'\0' << " ";
+		}
+		cout << "\n";
+	}
+}
+
+// 【测试】，打印distArr
+void printDistArr()
+{
+	for (int i = 0; i < total; ++i)
+		cout << getName[distArr[i]->num_] << " 's dist: " << distArr[i]->dist_ << endl;
+}
+
 // 查询，比较简单的dijkstra实现。不同之处在于父母数不唯一。
 void work(string & ori,string & des)
 {
 	int oriNum = getNum[ori];
 	int desNum = getNum[des];
 	distArr[oriNum] -> dist_ = 0;
-	priority_queue<Station *,vector<Station *>,op> pq;
+	priority_queue<Station * &,vector<Station *>,op> pq;
 	for (int i = 0; i < total; ++i)
 		pq.push(distArr[i]);
+	// cout << "初始的distArr：\n";
+	// printDistArr();
 	while(!pq.empty())
 	{
 		Station *t = pq.top();
@@ -216,8 +241,12 @@ void work(string & ori,string & des)
 		int num = t->num_;
 		int dist = t->dist_;
 		known[num] = 1;
+		// cout << "pop: " << getName[num] <<"!!!"<< distArr[num]->dist_<<"\n";
 		if(num == desNum)
+		{
+			// cout << getName[num] << "!\n";
 			break;
+		}
 		for (int i = 0; i < total; ++i)
 		{
 			if(!known[i])
@@ -225,27 +254,33 @@ void work(string & ori,string & des)
 				int newDist = g[num][i]+dist;
 				if(newDist < distArr[i]->dist_)
 				{
-					distArr[i]->dist_ = g[num][i]+dist;
+					distArr[i]->dist_ = newDist;
 					parent[i].clear();
 					parent[i].push_back(num);
 				}
 				else if(newDist == distArr[i]->dist_)
 					parent[i].push_back(num);
-				else
-					continue;
 			}
 		}
+		priority_queue<Station * &,vector<Station *>,op> pqTemp;
+		for (int i = 0; i < total; ++i)
+			if(!known[i])
+				pqTemp.push(distArr[i]);
+		pq = pqTemp;// 感觉这一步效率低。。
+		// cout << "pop " << getName[num] << " 's distArr:\n";
+		// printDistArr();
 	}
-	// 如果无法从起始站通过换乘到达终点站，
+	// 因为没测试任意两点的连通性，以防万一，所以还是考虑一下这种情况。
+	// 如果无法从起始站通过换乘到达终点站
 	// 则终点站的parent是起始站并且dist为255，此时提示无法到达
 	// （可能要步行一段距离或者通过别的方式，暂不予考虑）
 	if(parent[desNum][0] == oriNum && distArr[desNum]->dist_ == 255)
-		cout << "无法到达，可能要采取其它方式哦～\n\n";
+		cout << parent[desNum].size() <<"无法到达，可能要采取其它方式哦～\n\n";
 	else
 	{
 		// 打印最少换乘次数，可直接由distArr[desNum]-1得到;
 		// 也可使用函数 getTransferTimes(ori,des) 遍历树根到树叶的其中一条路径得出
-		cout << "亲，要换乘【" <<  distArr[desNum]->dist_-1 << "】次哦～\n\n"
+		cout << "☺ 亲，要换乘【" <<  distArr[desNum]->dist_-1 << "】次哦～\n\n"
 			 <<"具体方案如下：\n\n";
 
 		// 【测试】，打印站点的父子关系（打印从终点站到起始站的全部可能转站点））
@@ -255,6 +290,7 @@ void work(string & ori,string & des)
 		print(oriNum,desNum);
 	}
 }
+
 // 清屏、暂停函数，跨平台
 void clear(int t = 0)
 {
@@ -273,9 +309,11 @@ void clear(int t = 0)
 	#endif
 }
 
+// 主函数
 int main(int argc, char const *argv[])
 {
 	cout << "开始录入站点数据...\n";
+	clock_t timeBeg = clock();
 	// 公交数据录入
 	fstream data("alllines.txt");
 	if(data.fail())
@@ -352,7 +390,7 @@ int main(int argc, char const *argv[])
 	memset(g,255,sizeof(g));
 	for (int i = 0; i < total; ++i)
 	{
-		for (std::vector<pair<int,int> >::iterator j = getLines[i].begin();j != getLines[i].end();j++)
+		for (vector<pair<int,int> >::iterator j = getLines[i].begin();j != getLines[i].end();j++)
 		{
 			int busId = j->first;
 			int lineDirect = j->second;
@@ -366,17 +404,11 @@ int main(int argc, char const *argv[])
 		distArr[i] = new Station(i);
 
 	// 【测试】，检查直达矩阵是否正确
-	// for (int i = 0; i < total; ++i)
-	// {
-	// 	for (int j = 0; j < total; ++j)
-	// 	{
-	// 		cout << g[i][j]-'\0' << " ";
-	// 	}
-	// 	cout << "\n";
-	// }
+	// printG();
 
-	cout << "站点数据处理完成！\n";
-	clear(1);
+	clock_t timeEnd = clock();// 录入处理数据计时
+	cout << "站点数据处理完成！耗时 " << ((double)(timeEnd - timeBeg))/CLOCKS_PER_SEC << " 秒\n";
+	clear(2);
 
 	// 查询
 	while(1)
@@ -404,9 +436,13 @@ int main(int argc, char const *argv[])
 
 		// 初始化方案数为1
 		countWay = 1;
+		timeBeg = clock();// 查询打印方案计时
 
 		// dijkstra算法，进行查询，打印转乘结果
 		work(ori,des);
+
+		timeEnd = clock();
+		cout << "此次查询耗时 " << ((double)(timeEnd - timeBeg))/CLOCKS_PER_SEC << " 秒\n\n";
 
 		// 控制退出程序
 		char quitSignal;
