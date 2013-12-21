@@ -133,7 +133,7 @@ void printHowToTransfer(list<int>::iterator beg, list<int>::iterator end)
 					continue;
 				if(begPos < nextBegPos)
 				{
-					cout << " 从【" << getName[*beg] << "】站搭乘 <" << lineNum << "号公交车(" 
+					cout << "     从【" << getName[*beg] << "】站搭乘 <" << lineNum << "号公交车(" 
 						 <<  t->busType_ << ")-"; 
 					if(lineDirect)
 						cout << "下行线";
@@ -275,7 +275,7 @@ void work(string & ori,string & des)
 	// 则终点站的parent是起始站并且dist为255，此时提示无法到达
 	// （可能要步行一段距离或者通过别的方式，暂不予考虑）
 	if(parent[desNum][0] == oriNum && distArr[desNum]->dist_ == 255)
-		cout << parent[desNum].size() <<"无法到达，可能要采取其它方式哦～\n\n";
+		cout <<"无法到达，可能要采取其它方式哦～\n\n";
 	else
 	{
 		// 打印最少换乘次数，可直接由distArr[desNum]-1得到;
